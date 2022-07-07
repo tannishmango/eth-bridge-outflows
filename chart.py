@@ -38,7 +38,7 @@ st.button(
 
 def fetch_data(start_date):
     start_date = str(start_date)
-    from main import get_bridge_data
+    from data_fetch import get_bridge_data
     data = get_bridge_data(start_date)
     sub_df = data.drop(["amount","timestamp"],axis=1)
     sub_df["amount_usd"] = sub_df["amount_usd"].apply(lambda x: float(x))
