@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 
-#  python3.10 -m streamlit run chart.py
+#  python3.10 -m streamlit run main.py
 
 
 def set_rpc_url(rpc_url: str):
